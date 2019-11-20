@@ -2,6 +2,11 @@ import React from 'react';
 import './Person.css';
 
 const Person = props => {
+  const style = {
+    '@media(min-width: 500px)': {
+      width: '450px'
+    }
+  };
   return (
     <div className="Person">
       <p onClick={props.click}>
